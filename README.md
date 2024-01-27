@@ -1,0 +1,2 @@
+# BtChit
+simple chatting application
