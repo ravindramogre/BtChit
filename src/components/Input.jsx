@@ -42,7 +42,7 @@ const Input = () => {
         )
       }
       else {
-        if(text!=""){
+        if(text!==""){
           await updateDoc(doc(db, "chats", data.chatId), {
             messages: arrayUnion({
               id: uuid(),
@@ -53,7 +53,7 @@ const Input = () => {
           });
         }
       }
-      if(text!=""){
+      if(text!==""){
         // update chat section for currentUser
         await updateDoc(doc(db, "userChats", currentUser.uid),{
           [data.chatId + ".lastMessage"] :{
